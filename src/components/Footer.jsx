@@ -1,5 +1,3 @@
-import myImage from '../assets/React.svg'
-
 function Footer() {
   return(
     <div className="bg-black flex flex-col md:flex-row shadow h-[300px] border border-[#525252] ">
