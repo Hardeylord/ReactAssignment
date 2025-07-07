@@ -1,10 +1,10 @@
 import myImage from '../assets/React.svg'
 
-function Footer(params) {
+function Footer() {
   return(
     <div className="bg-black flex flex-col md:flex-row shadow h-[300px] border border-[#525252] ">
       <div className='w-1/3 flex justify-center items-center'>
-        <img className='size-40' src={myImage}/>
+        <img className='size-40' src='react.svg'/>
         </div>
       <div className='w-1/3 flex justify-center items-center'>
       <ul className="space-y-3">
