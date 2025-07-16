@@ -22,9 +22,13 @@ function Header() {
             <li className="text-white">
               <Link to="/todolist">Todo-List</Link>
             </li>
+            
             <li className="text-white">
-              <Link to="/">Contact</Link>
+              <Link to="/store">Store</Link>
             </li>
+            {/* <li className="text-white">
+              <Link to="/Store2">Store2</Link>
+            </li> */}
           </ul>
         </div>
         <button className="p-2 flex space-x-2 rounded-xl text-white bg-[#0081A3] cursor-pointer">

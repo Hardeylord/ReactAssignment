@@ -8,29 +8,7 @@ export default function Login() {
 
   // const [emailInput, SetemailInput] = useState("");
    const [isLoggedIn, SetisLoggedIn] = useState(false);
-  // const [passwordInput, SetpasswordInput] = useState("");
-
-  // function checkPwd(e) {
-  //   let pwdValue = e.target.value;
-  //   SetpasswordInput(pwdValue);
-  // }
-  // function checkEmail(e) {
-  //   let emailValue = e.target.value;
-  //   SetemailInput(emailValue);
-  // }
-
-  // function loggInOut() {
-  //   // SetemailInput(e.target.value)
-  //   if (!emailInput) {
-  //     alert(`enter a valid email`);
-  //     return;
-  //   } else if (!passwordInput) {
-  //     alert("enter the correct password");
-  //     return;
-  //   } else {
-  //      SetisLoggedIn(!isLoggedIn);
-  //   }
-  // }
+  
   const[formData, setformData]=useState({
     email:"",
     password:""
@@ -52,7 +30,7 @@ export default function Login() {
       }
 
       if (!formData.password) {
-        errors.password="empty email is not allowed"
+        errors.password="empty PASSWORD is not allowed"
       } else if (formData.password.length < 5 || formData.password.length >10) {
         errors.password="password cant be less than 5 or greater than 10"
       }
@@ -62,7 +40,17 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    validateForm()
+    const errors = validateForm()
+    const errorLength = Object.keys(errors).length;
+    console.log(errors,errorLength);
+    
+    if(errorLength){
+      console.log("enter error");
+      
+      return;
+    }
+    // alert("Form submitted successfully")
+    SetisLoggedIn(true)
   }
   return (
     <>
@@ -109,7 +97,7 @@ export default function Login() {
                     className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="••••••••"
                   />
-                  {formErrors.email && <p className="text-red-600">{formErrors.email}</p>}
+                  {formErrors.password && <p className="text-red-600">{formErrors.password}</p>}
                 </div>
 
                 {/* Submit */}

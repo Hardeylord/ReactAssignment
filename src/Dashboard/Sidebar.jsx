@@ -3,10 +3,13 @@ import {LogOut} from "lucide-react"
 import { useState } from 'react';
 
 export default function Sidebar() {
-   const [isLoggedIn, SetisLoggedIn] = useState(false);
-   function loggInOut() {
-        SetisLoggedIn(!isLoggedIn);
-     }
+  //  const [isLoggedIn, SetisLoggedIn] = useState(false);
+  //  function loggInOut() {
+  //       SetisLoggedIn(!isLoggedIn);
+  //    }onClick={loggInOut}
+  function reloadPage() {
+    window.location.reload()
+  }
   return (
     <>
     <div className="min-h-screen flex bg-gray-100 text-gray-800">
@@ -14,7 +17,7 @@ export default function Sidebar() {
     <aside className="w-64 bg-white shadow-md p-6 hidden md:block">
     <div className='flex justify-between items-start'>
     <h2 className="text-2xl font-bold text-blue-600 mb-6">Dashboard</h2>
-    <LogOut onClick={loggInOut} className='cursor-pointer'/>
+    <LogOut onClick={reloadPage} className='cursor-pointer'/>
     </div>
      <nav className="space-y-4 text-sm">
        <a href="#" className="block text-gray-700 hover:text-blue-600">Overview</a>
