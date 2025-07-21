@@ -1,5 +1,5 @@
 import { ImagePlus, Plus, ShoppingCart, Upload, X } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState, createContext} from "react";
 import {
   Button,
   Dialog,
@@ -11,6 +11,7 @@ import {
   MenuItem,
   Drawer,
 } from "@material-tailwind/react";
+
 
 export default function Store() {
   const [inputValue, setinputValue] = useState({
@@ -274,6 +275,6 @@ export default function Store() {
           <Button onClick={handleOpen}>Add Product</Button>
         </div>
       )}
-    </>
+        </>
   );
 }
