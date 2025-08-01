@@ -23,14 +23,14 @@ export const Slidr = () => {
       image: "/slider/pic4.jpg",
       h1: "Join the Neighbourhood",
     },
-    {
-      image: "/slider/pic5.jpg",
-      h1: "A journey to put a smile on your face",
-    },
-    {
-      image: "/annie-spratt-hCb3lIB8L8E-unsplash.jpg",
-      h1: "Get started now",
-    },
+    // {
+    //   image: "/slider/pic5.jpg",
+    //   h1: "A journey to put a smile on your face",
+    // },
+    // {
+    //   image: "/annie-spratt-hCb3lIB8L8E-unsplash.jpg",
+    //   h1: "Get started now",
+    // },
   ];
 
   
