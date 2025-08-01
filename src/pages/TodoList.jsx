@@ -27,7 +27,6 @@ export default function TodoList() {
   }
 
   function addItem() {
-    // ✅ Input Validation
     if (!items.text.trim()) {
       alert("Please enter a valid task.");
       return;
@@ -46,7 +45,6 @@ export default function TodoList() {
       return;
     }
 
-    // ✅ Add task
     setitemList([...itemList, items]);
     setItems({ text: "", date: "" });
   }

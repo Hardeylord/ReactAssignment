@@ -8,7 +8,7 @@ function Header() {
         <p className="cursor-pointer text-white">
           <span className="text-3xl text-[#0081A3]">React.</span>js
         </p>
-        <div>
+        <div className="hidden md:flex">
           <ul className="flex space-x-9 justify-between">
             <li className="text-white">
               <Link to="/">Home</Link>

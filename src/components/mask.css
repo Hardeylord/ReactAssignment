@@ -1,0 +1,7 @@
+.hero-img{
+  mask-image: url("cup.png");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  mask-size: 50%;
+}
